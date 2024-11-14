@@ -1,0 +1,10 @@
+.categories {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+
+    .category {
+        font-size: 1.5rem;
+        color: #f8f8f8; 
+    }
+}

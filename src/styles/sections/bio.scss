@@ -1,0 +1,33 @@
+.biographie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding-bottom: 20rem;
+    
+    .bio-title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #f8f8f8;
+    }
+    .bio-text {
+      display: flex;
+      gap: 2rem;
+      max-width: 800px;
+  
+      p {
+        flex: 1;
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: justify;
+      }
+    }
+  
+    .bio-image {
+      margin-top: 1rem;
+      img {
+        width: 500px;
+      }
+    }
+  }
+  
