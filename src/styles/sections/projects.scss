@@ -25,6 +25,7 @@
       background-color: #1e1e1e;
       padding: 1rem;
       border-radius: 8px;
+      cursor: pointer;
       color: #f8f8f8;
       text-decoration: none;
       transition: transform 0.2s, box-shadow 0.2s;
@@ -53,10 +54,7 @@
         margin-top: 0.5rem;
   
         .tag {
-          background-color: #333;
-          padding: 0.3rem 0.5rem;
-          border-radius: 4px;
-          font-size: 0.9rem;
+          font-size: 2rem;
           color: #f8f8f8;
         }
       }

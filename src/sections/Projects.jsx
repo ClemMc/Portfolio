@@ -3,6 +3,7 @@ import BookiLogo from '../assets/BookiLogo.png';
 import ohmyfoodLogo from '../assets/ohmyfood.png';
 import SophieBluelLogo from '../assets/SophieBluelLogo.png';
 import KasaLogo from '../assets/KasaLogo.png';
+import Card from '../components/Card';
 
 const projects = [
   {
@@ -28,7 +29,7 @@ const projects = [
     logo: SophieBluelLogo,
     title: 'SophieBluel',
     description: 'Créez une page web dynamique avec JavaScript',
-    tags: ['html','css','sass'],
+    tags: ['javascript'],
     link: 'https://clemmc.github.io/ohmyfood/'
   },
 
@@ -37,7 +38,7 @@ const projects = [
     logo: KasaLogo,
     title: 'Kasa',
     description: 'Créez une application web de location immobilière avec React',
-    tags: ['html','css','sass'],
+    tags: ['react','sass'],
     link: 'https://clemmc.github.io/ohmyfood/'
   },
 ];
@@ -48,19 +49,20 @@ const Projects = () => {
       <h2 className="projects-title">Mes Projets</h2>
       <div className="projects-grid">
         {projects.map((project) => (
-          <a href={project.link} key={project.id} className="project-card" target="_blank" rel="noopener noreferrer">
-            <img src={project.logo} alt={`${project.title} logo`} className="card-logo" />
-            <p>{project.description}</p>
-            <div className="tags">
-              {project.tags.map((tag, index) => (
-                <span key={index} className="tag">{tag}</span>
-              ))}
-            </div>
-          </a>
+          <Card logo={project.logo} category={project.tags} description={project.description} link={project.link}  key={project.id} />
+
         ))}
       </div>
     </section>
   );
+
+  // return (
+  //   <>
+  //   <h1>Projets</h1>
+  //   <Card logo={ohmyfoodLogo} category={['react', 'sass']} description="Un site personnel pour présenter mes compétences et projets." link="#" title="Portfolio" />
+  //   </>
+
+  // )
 };
 
 export default Projects;

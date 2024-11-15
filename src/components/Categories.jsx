@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3Alt, faSass, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import '../styles/categories.scss';
+import '../styles/sections/projects.scss';
 
 const categoriesList = {
     html: { icon: faHtml5 },
@@ -13,10 +14,10 @@ const categoriesList = {
 
 const Categories = ({ selectedCategories = [] }) => {
     return (
-        <div className="categories">
+        <div className="tags">
             {selectedCategories.map((catKey) =>
                 categoriesList[catKey.toLowerCase()] ? (
-                    <div key={catKey} className="category">
+                    <div key={catKey} className="tag">
                         <FontAwesomeIcon icon={categoriesList[catKey.toLowerCase()].icon} />
                     </div>
                 ) : null
