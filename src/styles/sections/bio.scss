@@ -1,33 +1,107 @@
-.biographie {
+#biographie {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 15%;
     padding-bottom: 20rem;
-    
+
     .bio-title {
         font-size: 2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         color: #f8f8f8;
     }
-    .bio-text {
-      display: flex;
-      gap: 2rem;
-      max-width: 800px;
-  
-      p {
-        flex: 1;
-        font-size: 1rem;
-        line-height: 1.6;
-        text-align: justify;
-      }
+
+    .bio-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 90%;
+        max-width: 1080px;
+
+        .bio-paragraphs {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            width: 100%;
+
+
+            .top-group,
+            .bottom-group {
+                display: flex;
+                justify-content: center;
+                gap: 10rem;
+
+                .paragraph {
+                    flex: 1 1 auto;
+                    color: #f8f8f8;
+                    font-size: 0.9rem;
+                    line-height: 1.4;
+                    max-width: 200px;
+                }
+            }
+
+            .bottom-group {
+                justify-content: space-between;
+                
+            }
+        }
+
+        .bio-image {
+            img {
+                width: 300px;
+                height: 300px;
+                object-fit: cover;
+            }
+        }
     }
-  
-    .bio-image {
-      margin-top: 1rem;
-      img {
-        width: 500px;
-      }
+}
+
+
+@media (max-width: 1024px) {
+    .bio-container {
+        .bio-paragraphs {
+            .top-group,
+            .bottom-group {
+                flex-wrap: wrap; 
+                gap: 1rem;
+            }
+
+            .paragraph {
+                max-width: 150px;
+                font-size: 0.8rem;
+            }
+        }
+
+        .bio-image img {
+            width: 200px;
+            height: 200px;
+        }
     }
-  }
-  
+}
+
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column;
+        align-items: center;
+
+        .bio-paragraphs {
+            .top-group,
+            .bottom-group {
+                flex-direction: column;
+                align-items: center;
+
+                .paragraph {
+                    max-width: 90%;
+                    text-align: center;
+                }
+            }
+        }
+
+        .bio-image img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

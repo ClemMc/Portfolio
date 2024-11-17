@@ -48,6 +48,61 @@
         }
     }
 }
+.socialSection {
+  margin-top: auto; // Place au bas du header
+  padding: 10px 0;
+  background-color: #1a1a1a;
+
+  .socialLinks {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 10px;
+
+      a {
+        color: #ddd;
+        text-decoration: none;
+        font-size: 20px;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #fff;
+        }
+
+        .fa-icon {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .socialSection {
+    .socialLinks {
+      flex-direction: row;
+      justify-content: center;
+
+      li {
+        margin: 0 10px;
+
+        a {
+          font-size: 16px;
+
+          .fa-icon {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @media (max-width: 768px) {
   .side-header {

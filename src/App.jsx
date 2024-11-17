@@ -1,4 +1,4 @@
-import About from './sections/About';
+import About from './sections/Welcome';
 import Bio from './sections/Bio';
 import Header from './sections/Header';
 import Footer from './sections/Footer';
@@ -9,6 +9,7 @@ import './styles/main.scss';
 function App() {
   return (
     <div className="App">
+
       <Header />
       <main>
         <About />

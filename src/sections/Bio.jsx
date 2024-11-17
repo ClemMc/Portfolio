@@ -1,23 +1,32 @@
-import '../styles/sections/bio.scss';
-import Coder from '../assets/coder.png';
+import "../styles/sections/bio.scss";
+import Coder from "../assets/coder.png";
 
 const Bio = () => {
     return (
-        <div className="biographie">
-            <h2 className='bio-title'>Présentation</h2>
-            <div className="bio-text">
-                <p>Ipsam vero urbem Byzantiorum fuisse refertissimam atque ornatissimam signis quis ignorat? Quae illi, exhausti sumptibus bellisque maximis, cum omnis Mithridaticos impetus totumque Pontum armatum affervescentem in Asiam atque erumpentem, 
-                    ore repulsum et cervicibus interclusum suis sustinerent, tum, inquam, Byzantii et postea signa illa et reliqua urbis ornanemta sanctissime custodita tenuerunt.Inter quos Paulus eminebat notarius ortus in Hispania, glabro quidam sub vultu latens, 
-                    odorandi vias periculorum occultas perquam sagax. is in Brittanniam missus ut militares quosdam perduceret ausos conspirasse Magnentio, cum reniti non possent, iussa licentius supergressus fluminis modo fortunis conplurium sese repentinus infudit
-                    et ferebatur per strages multiplices ac ruinas, vinculis membra ingenuorum adfligens et quosdam obterens manicis, crimina scilicet multa consarcinando a veritate longe discreta. unde admissum est facinus impium, quod Constanti tempus nota inusserat 
-                    sempiterna.</p>
-                <p>Tu autem, Fanni, quod mihi tantum tribui dicis quantum ego nec adgnosco nec postulo, facis amice; sed, ut mihi videris, non recte iudicas de Catone; aut enim nemo, quod quidem magis credo, aut si quisquam, ille sapiens fuit. Quo modo, ut alia omittam, 
-                    mortem filii tulit! memineram Paulum, videram Galum, sed hi in pueris, Cato in perfecto et spectato viro. Sed (saepe enim redeo ad Scipionem, cuius omnis sermo erat de amicitia) querebatur, quod omnibus in rebus homines diligentiores essent; capras 
-                    et oves quot quisque haberet, dicere posse, amicos quot haberet, non posse dicere et in illis quidem parandis adhibere curam, in amicis eligendis neglegentis esse nec habere quasi signa quaedam et notas, quibus eos qui ad amicitias essent idonei, 
-                    iudicarent. Sunt igitur firmi et stabiles et constantes eligendi; cuius generis est magna penuria. Et iudicare difficile est sane nisi expertum; experiendum autem est in ipsa amicitia. Ita praecurrit amicitia iudicium tollitque experiendi potestatem.</p>
-            </div>
-            <div className="bio-image">
-                <img src={Coder} alt="Clément" />
+        <div id="biographie">
+            <h2 className="bio-title">Présentation</h2>
+            <div className="bio-container">
+                <div className="bio-paragraphs">
+                    <div className="top-group">
+                        <p className="paragraph 1">Voici Clément Metral, 30 ans, venu tout droit de Peltre en Moselle. Actuellement en plein apprentissage du développement web,
+                            il transforme sa passion pour la technologie en un avenir prometteur. Armé de HTML, Sass (son préféré), JavaScript et React, il crée un portfolio 
+                            qui reflète à la fois ses compétences et son univers créatif. Avec son ordinateur récemment boosté, il n’y a plus de limites à ce qu’il peut accomplir.</p>
+                        <p className="paragraph 2">Clément, c’est aussi un passionné de challenges. Ancien chef cuistot dans la vie quotidienne, il explore aujourd’hui un tout autre menu :
+                            celui du code et de la conception. Toujours curieux, il est prêt à expérimenter de nouveaux projets, à repousser ses limites et à s’inspirer d’autres 
+                            créateurs pour faire évoluer son style unique, entre sobriété et technologie.</p>
+                    </div>
+                    <div className="bottom-group">
+                        <p className="paragraph 3">Côté loisirs, Clément aime les randonnées en pleine nature, même si une périostite lui impose parfois des pauses. Grand amateur de Coca, 
+                            il opte pour la version zéro en attendant de nouvelles résolutions plus saines. Avec un équilibre entre apprentissage, vie active et moments de détente, 
+                            il avance sereinement vers ses objectifs.</p>
+                        <div className="bio-image">
+                            <img src={Coder} alt="Clément" />
+                        </div>
+                        <p className="paragraph 4">En parallèle, Clément se prépare pour un nouveau poste chez Amazon en tant que préparateur de commandes. Toujours motivé et ambitieux, 
+                            il a fait de “chaque étape est une progression” son credo. Qu’il s’agisse de coder, d’apprendre ou de relever de nouveaux défis, Clément est prêt à montrer 
+                            de quoi il est capable.</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
