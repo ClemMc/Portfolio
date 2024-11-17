@@ -1,136 +1,196 @@
 @import '../variables';
 @import '../mixins';
 
-.side-header {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 80px;
-    height: 100vh;
-    background-color: #1a1a1a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    z-index: 10;
-
-    .nav-links {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        li {
-            width: 100%;
-            text-align: center;
-        }
-
-        a {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            color: #ddd;
-            text-decoration: none;
-            font-size: 12px;
-            padding: 10px 0;
-            transition: color 0.3s ease;
-
-            &:hover, &.active {
-                color: #fff;
-            }
-
-            .fa-icon {
-                font-size: 20px;
-                margin-bottom: 5px;
-            }
-        }
-    }
-}
-.socialSection {
-  margin-top: auto; // Place au bas du header
-  padding: 10px 0;
+// Bouton Menu
+.menu-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
   background-color: #1a1a1a;
+  border: none;
+  color: #ddd;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 20;
+  transition: background-color 0.3s ease;
 
-  .socialLinks {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+  &:hover {
+    background-color: #333;
+  }
 
-    li {
-      margin-bottom: 10px;
-
-      a {
-        color: #ddd;
-        text-decoration: none;
-        font-size: 20px;
-        transition: color 0.3s ease;
-
-        &:hover {
-          color: #fff;
-        }
-
-        .fa-icon {
-          font-size: 18px;
-        }
-      }
-    }
+  .fa-icon {
+    font-size: 24px;
   }
 }
 
-@media (max-width: 768px) {
-  .socialSection {
-    .socialLinks {
-      flex-direction: row;
-      justify-content: center;
+// Barre de navigation
+.side-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100vh;
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 10;
 
+  .nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    li {
+      width: 100%;
+      text-align: center;
+    }
+
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #ddd;
+      text-decoration: none;
+      font-size: 12px;
+      padding: 10px 0;
+      transition: color 0.3s ease;
+
+      &:hover, &.active {
+        color: #fff;
+      }
+
+      .fa-icon {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .social-menu {
+    position: relative;
+  
+    .social-dropdown {
+      position: absolute;
+      top: 0%;
+      left: 100%;
+      border-radius: 8px;
+      background-color: #1a1a1a;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      list-style: none;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0.3s, opacity 0.3s ease;
+  
       li {
-        margin: 0 10px;
-
+        margin: 0;
+  
         a {
-          font-size: 16px;
-
-          .fa-icon {
-            font-size: 16px;
+          color: #ddd;
+          text-decoration: none;
+  
+          &:hover {
+            color: #fff;
           }
         }
       }
     }
+  
+    &:hover .social-dropdown {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  
+  .nav-links .fa-icon {
+    margin-right: 8px;
   }
 }
 
-
+// Responsive design
+// Mobile-first approach
 @media (max-width: 768px) {
   .side-header {
-    flex-direction: row;
+    display: none; // Par défaut, caché sur mobile.
+  }
+
+  .menu-button {
+    display: flex; // Affiche le bouton menu.
+  }
+
+  .side-header.visible {
+    display: flex; // Affiche le menu lorsque visible.
+    position: fixed;
     bottom: 0;
-    top: auto;
+    left: 0;
+    right: 0;
+    top: unset;
+    flex-direction: row; // Menu horizontal pour les petits écrans.
+    height: 60px;
     width: 100%;
-    height: 70px;
-    background-color: #1a1a1a;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .nav-links {
+    flex-direction: row; // Icônes alignées horizontalement.
+    gap: 10px;
+
+    a {
+      font-size: 10px; // Icônes plus petites pour le mobile.
+      padding: 5px;
+    }
+  }
+}
+
+// Tablette
+@media (min-width: 769px) and (max-width: 1024px) {
+  .side-header {
+    flex-direction: row; // Alignement horizontal sur tablette.
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
 
     .nav-links {
       flex-direction: row;
-      justify-content: space-around;
-      width: 100%;
-      padding: 0;
-
-      li {
-        width: auto;
-      }
+      gap: 20px;
 
       a {
-        font-size: 10px;
-        padding: 5px;
-        
+        font-size: 14px;
         .fa-icon {
-          font-size: 18px;
+          margin-bottom: 0;
         }
       }
     }
   }
+
+  .menu-button {
+    display: none; // Pas besoin du bouton menu sur tablette.
+  }
+}
+
+// Desktop
+@media (min-width: 1025px) {
+  .side-header {
+    display: flex; // Navigation verticale classique.
+  }
+
+
 }
