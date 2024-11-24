@@ -1,7 +1,7 @@
 import ComicSection from "../components/ComicSection";
 import ordi from "../assets/ordi.webp";
 import magasin from "../assets/magasin.webp";
-import sport from "../assets/sport.webp";
+import loisir from "../assets/loisir.webp";
 
 const aboutItems = [
   {
@@ -21,7 +21,7 @@ const aboutItems = [
   },
   {
     text: "À côté de ça, Clément adore le sport, les jeux vidéo, la lecture et le cinéma.",
-    image: sport,
+    image: loisir,
     side: "right",
   },
 ];

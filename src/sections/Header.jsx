@@ -24,8 +24,8 @@ function Header() {
       </button>
 
       {isMenuVisible && (
-        <nav className="side-header">
-          <ul className="nav-links">
+        <nav className={`side-header ${isMenuVisible ? 'visible' : ''}`}>
+        <ul className="nav-links">
             <li>
               <a
                 href="#Welcome"

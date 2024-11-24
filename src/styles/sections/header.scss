@@ -130,7 +130,7 @@
   }
 
   .side-header.visible {
-    display: flex; 
+    display: flex;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -143,15 +143,21 @@
     justify-content: space-around;
   }
 
-  .nav-links {
+  .side-header .nav-links {
     flex-direction: row;
-    gap: 10px;
+    gap: 30px;
 
     a {
       font-size: 10px;
       padding: 5px;
     }
   }
+
+  .side-header .social-menu .social-dropdown {
+    flex-direction: row;
+    // juste au dessus du bouton réseaux sociaux
+  }
+  
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -163,13 +169,14 @@
     left: 0;
     align-items: center;
     justify-content: space-around;
-    padding: 0;
+    padding: 1.5rem;
 
     .nav-links {
       flex-direction: row;
       gap: 20px;
 
       a {
+        padding: 0.5rem;
         font-size: 14px;
         .fa-icon {
           margin-bottom: 0;
