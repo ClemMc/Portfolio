@@ -2,6 +2,7 @@ import ComicSection from "../components/ComicSection";
 import ordi from "../assets/ordi.webp";
 import magasin from "../assets/magasin.webp";
 import loisir from "../assets/loisir.webp";
+import job from "../assets/job.webp";
 
 const aboutItems = [
   {
@@ -16,7 +17,7 @@ const aboutItems = [
   },
   {
     text: "Aujourd'hui, il continue à se perfectionner pour transformer sa passion en métier.",
-    image: ordi,
+    image: job,
     side: "right",
   },
   {

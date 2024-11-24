@@ -155,7 +155,9 @@
   }
 
   .side-header .social-menu .social-dropdown {
-    flex-direction: row;
+    position: absolute;
+    bottom: 0; /* Positionne au-dessus du bouton Réseaux */
+    left: 100%; /* Centre horizontalement */
   }
   
 }
