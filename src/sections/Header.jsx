@@ -7,30 +7,28 @@ import { useState } from 'react';
 function Header() {
   const [activeSection, setActiveSection] = useState('welcome');
   const [showSocialMenu, setShowSocialMenu] = useState(false);
-  const [isMenuVisible, setIsMenuVisible] = useState(false); // Contrôle de la visibilité du menu
+  const [isMenuVisible, setIsMenuVisible] = useState(false); 
 
   const handleSetActive = (section) => {
     setActiveSection(section);
   };
 
   const toggleMenu = () => {
-    setIsMenuVisible(!isMenuVisible); // Affiche ou cache le menu
+    setIsMenuVisible(!isMenuVisible); 
   };
 
   return (
     <>
-      {/* Bouton Menu */}
       <button className="menu-button" onClick={toggleMenu}>
         <FontAwesomeIcon icon={faBars} className="fa-icon" />
       </button>
 
-      {/* Barre de navigation */}
-      {isMenuVisible && ( // Affichage conditionnel du menu
+      {isMenuVisible && (
         <nav className="side-header">
           <ul className="nav-links">
             <li>
               <a
-                href="#about-container"
+                href="#Welcome"
                 className={activeSection === 'welcome' ? 'active' : ''}
                 onClick={() => handleSetActive('welcome')}
               >

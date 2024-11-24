@@ -3,10 +3,10 @@ import '../styles/sections/about.scss';
 import profileImage from '../assets/moi.png';
 import Typewriter from 'typewriter-effect';
 
-const About = () => {
+const Welcome = () => {
     return (
 
-      <div id="about-container">
+      <div id="Welcome">
         <section className="about">
           <div className="about-image">
             <img src={profileImage} alt="Clément" />
@@ -42,4 +42,4 @@ const About = () => {
     );
   };
   
-  export default About;
+  export default Welcome;

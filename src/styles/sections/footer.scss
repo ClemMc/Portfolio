@@ -1,7 +1,7 @@
 .footer {
     padding: 20rem 1rem 2rem;
     color: #f8f8f8;
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
     text-align: center;
 
     .footer-content {
@@ -30,6 +30,10 @@
 
     .site-credit {
         font-size: 0.9rem;
+        color: #aaa;
+    }
+    .gpt-credit {
+        font-size: 0.6rem;
         color: #aaa;
     }
 }

@@ -1,7 +1,6 @@
 @import '../variables';
 @import '../mixins';
 
-// Bouton Menu
 .menu-button {
   position: fixed;
   bottom: 20px;
@@ -29,7 +28,6 @@
   }
 }
 
-// Barre de navigation
 .side-header {
   position: fixed;
   top: 0;
@@ -120,25 +118,23 @@
   }
 }
 
-// Responsive design
-// Mobile-first approach
 @media (max-width: 768px) {
   .side-header {
-    display: none; // Par défaut, caché sur mobile.
+    display: none;
   }
 
   .menu-button {
-    display: flex; // Affiche le bouton menu.
+    display: flex; 
   }
 
   .side-header.visible {
-    display: flex; // Affiche le menu lorsque visible.
+    display: flex; 
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     top: unset;
-    flex-direction: row; // Menu horizontal pour les petits écrans.
+    flex-direction: row; 
     height: 60px;
     width: 100%;
     align-items: center;
@@ -146,20 +142,19 @@
   }
 
   .nav-links {
-    flex-direction: row; // Icônes alignées horizontalement.
+    flex-direction: row;
     gap: 10px;
 
     a {
-      font-size: 10px; // Icônes plus petites pour le mobile.
+      font-size: 10px;
       padding: 5px;
     }
   }
 }
 
-// Tablette
 @media (min-width: 769px) and (max-width: 1024px) {
   .side-header {
-    flex-direction: row; // Alignement horizontal sur tablette.
+    flex-direction: row; 
     width: 100%;
     height: 60px;
     top: 0;
@@ -182,14 +177,13 @@
   }
 
   .menu-button {
-    display: none; // Pas besoin du bouton menu sur tablette.
+    display: none;
   }
 }
 
-// Desktop
 @media (min-width: 1025px) {
   .side-header {
-    display: flex; // Navigation verticale classique.
+    display: flex; 
   }
 
 

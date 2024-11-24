@@ -8,23 +8,21 @@ const Bio = () => {
             <div className="bio-container">
                 <div className="bio-paragraphs">
                     <div className="top-group">
-                        <p className="paragraph 1">Voici Clément Metral, 30 ans, venu tout droit de Peltre en Moselle. Actuellement en plein apprentissage du développement web,
-                            il transforme sa passion pour la technologie en un avenir prometteur. Armé de HTML, Sass (son préféré), JavaScript et React, il crée un portfolio 
-                            qui reflète à la fois ses compétences et son univers créatif. Avec son ordinateur récemment boosté, il n’y a plus de limites à ce qu’il peut accomplir.</p>
-                        <p className="paragraph 2">Clément, c’est aussi un passionné de challenges. Ancien chef cuistot dans la vie quotidienne, il explore aujourd’hui un tout autre menu :
-                            celui du code et de la conception. Toujours curieux, il est prêt à expérimenter de nouveaux projets, à repousser ses limites et à s’inspirer d’autres 
-                            créateurs pour faire évoluer son style unique, entre sobriété et technologie.</p>
+                        <p className="paragraph 1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et 
+                            quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                        <p className="paragraph 2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+                            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae 
+                            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
                     </div>
                     <div className="bottom-group">
-                        <p className="paragraph 3">Côté loisirs, Clément aime les randonnées en pleine nature, même si une périostite lui impose parfois des pauses. Grand amateur de Coca, 
-                            il opte pour la version zéro en attendant de nouvelles résolutions plus saines. Avec un équilibre entre apprentissage, vie active et moments de détente, 
-                            il avance sereinement vers ses objectifs.</p>
+                        <p className="paragraph 3">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great 
+                            explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences 
+                            that are extremely painful.</p>
                         <div className="bio-image">
                             <img src={Coder} alt="Clément" />
                         </div>
-                        <p className="paragraph 4">En parallèle, Clément se prépare pour un nouveau poste chez Amazon en tant que préparateur de commandes. Toujours motivé et ambitieux, 
-                            il a fait de “chaque étape est une progression” son credo. Qu’il s’agisse de coder, d’apprendre ou de relever de nouveaux défis, Clément est prêt à montrer 
-                            de quoi il est capable.</p>
+                        <p className="paragraph 4">Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. 
+                            To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?</p>
                     </div>
                 </div>
             </div>

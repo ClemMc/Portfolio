@@ -1,0 +1,56 @@
+.comic-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  
+    .comic-frame {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      max-width: 800px;
+  
+      &.left {
+        flex-direction: row;
+      }
+  
+      &.right {
+        flex-direction: row-reverse;
+      }
+  
+      .comic-bubble {
+        background-color: #f0f0f0;
+        padding: 1.5rem;
+        border-radius: 20px;
+        border: 2px solid #ccc;
+        position: relative;
+  
+        p {
+          margin: 0;
+          font-size: 1.2rem;
+          font-family: "Comic Sans MS", sans-serif; // Pour un effet bande dessinée.
+        }
+  
+        &:after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 10px;
+          border-color: transparent #f0f0f0 transparent transparent;
+          top: 50%;
+          left: -20px;
+          transform: translateY(-50%);
+        }
+      }
+  
+      .comic-image {
+        max-width: 350px;
+        border-radius: 5%;
+        border: 3px solid #ccc;
+      }
+    }
+  }
+  
