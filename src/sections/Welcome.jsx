@@ -31,7 +31,7 @@ const Welcome = () => {
               onInit={(typewriter) => {
                 typewriter
                   .changeDelay(50)
-                  .typeString('Bien le bonjour, visiteur ! Je me présente : <strong>Clément Metral</strong>. Bienvenue dans mon univers !')
+                  .typeString('Bien le bonjour, visiteur ! Je vous présente : <strong>Clément Metral</strong>. Bienvenue dans son univers !')
                   .start();
               }}
             />

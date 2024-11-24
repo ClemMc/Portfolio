@@ -5,7 +5,7 @@ import sport from "../assets/sport.webp";
 
 const aboutItems = [
   {
-    text: "Après plusieurs années en grande surface. Il a décidé de se réorienter vers le numérique.",
+    text: "Après plusieurs années en grande distribution. Il a décidé de se réorienter vers le numérique.",
     image: magasin,
     side: "left",
   },
@@ -29,7 +29,7 @@ const aboutItems = [
 const AboutSection = () => {
   return (
     <section id="about">
-      <h2>À propos de moi</h2>
+      <h2 className="about-title">Son histoire</h2>
       <ComicSection items={aboutItems} />
     </section>
   );

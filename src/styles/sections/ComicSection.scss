@@ -3,6 +3,12 @@
     padding-bottom: 20rem;
 }
 
+.about-title {
+    font-size: 2rem;
+    margin-bottom: 10rem;
+    color: #f8f8f8;
+  }
+
 .comic-section {
     margin-top: 10%;
     display: grid;
@@ -17,17 +23,17 @@
       max-width: 800px;
   
       .comic-bubble {
-        background-color: #f0f0f0;
+        background-color: #1e1e1e;
         padding: 1.5rem;
         border-radius: 20px;
-        border: 2px solid #ccc;
+        border: 2px solid #555;
         position: relative;
   
         p {
           margin: 10;
           font-size: 1.2rem;
           font-family: "Comic Sans MS", sans-serif;
-          color: #333;
+          color: #f8f8f8;
         }
       }
   
