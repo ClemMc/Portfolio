@@ -41,7 +41,7 @@ function Header() {
                 className={activeSection === 'about' ? 'active' : ''}
                 onClick={() => handleSetActive('about')}
               >
-                <FontAwesomeIcon icon={faUser} className="fa-icon" /> À propos
+                <FontAwesomeIcon icon={faUser} className="fa-icon" /> Histoire
               </a>
             </li>
             <li>

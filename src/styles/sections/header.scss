@@ -145,7 +145,8 @@
 
   .side-header .nav-links {
     flex-direction: row;
-    gap: 30px;
+    padding-left: 12%;
+    gap: 60px;
 
     a {
       font-size: 10px;
@@ -155,7 +156,6 @@
 
   .side-header .social-menu .social-dropdown {
     flex-direction: row;
-    // juste au dessus du bouton réseaux sociaux
   }
   
 }
