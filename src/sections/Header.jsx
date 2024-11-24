@@ -37,7 +37,7 @@ function Header() {
             </li>
             <li>
               <a
-                href="#biographie"
+                href="#about"
                 className={activeSection === 'about' ? 'active' : ''}
                 onClick={() => handleSetActive('about')}
               >

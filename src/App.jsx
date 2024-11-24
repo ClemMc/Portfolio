@@ -1,5 +1,5 @@
 import Welcome from './sections/Welcome';
-import Bio from './sections/Bio';
+// import Bio from './sections/Bio';
 import Header from './sections/Header';
 import Footer from './sections/Footer';
 import Projects from './sections/Projects';
@@ -15,7 +15,7 @@ function App() {
       <Header />
       <main>
         <Welcome />
-        <Bio />
+        {/* <Bio /> */}
         <AboutSection />
         <Projects />
         <Footer />

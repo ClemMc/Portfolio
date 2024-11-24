@@ -5,16 +5,24 @@ import sport from "../assets/sport.webp";
 
 const aboutItems = [
   {
-    text: "Je m'appelle Clément et je suis passionné par le développement web.",
+    text: "Après plusieurs années en grande surface. Il a décidé de se réorienter vers le numérique.",
     image: magasin,
+    side: "left",
   },
   {
-    text: "J'adore apprendre de nouvelles technologies comme React et Sass.",
+    text: "Il a commencé une formation et, quelques mois plus tard, ses progrès étaient impressionnants.",
     image: ordi,
+    side: "right",
   },
   {
-    text: "Mon objectif est de devenir un développeur full-stack compétent.",
+    text: "Aujourd'hui, il continue à se perfectionner pour transformer sa passion en métier.",
+    image: ordi,
+    side: "right",
+  },
+  {
+    text: "À côté de ça, Clément adore le sport, les jeux vidéo, la lecture et le cinéma.",
     image: sport,
+    side: "right",
   },
 ];
 
