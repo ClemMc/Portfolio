@@ -1,6 +1,6 @@
 import '../styles/sections/projects.scss';
 import BookiLogo from '../assets/BookiLogo.png';
-import ohmyfoodLogo from '../assets/ohmyfood.png';
+import ohmyfoodLogo from '../assets/ohmyfood2.png';
 import SophieBluelLogo from '../assets/SophieBluelLogo.png';
 import KasaLogo from '../assets/KasaLogo.png';
 import Card from '../components/Card';

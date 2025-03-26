@@ -22,7 +22,7 @@ const ComicSection = ({ items }) => {
       PropTypes.shape({
         text: PropTypes.string.isRequired,
         image: PropTypes.string.isRequired,
-        side: PropTypes.oneOf(["left", "right"]).isRequired, // Nouvelle validation
+        side: PropTypes.oneOf(["left", "right"]).isRequired,
       })
     ).isRequired,
   };
